@@ -1,4 +1,4 @@
-#Importing Modules
+#Importing Moduls
 import numpy
 import requests
 import os
