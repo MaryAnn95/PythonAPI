@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import pandas
 import sqlalchemy
 
+#Loading .env Data
 load_dotenv()
 
 #API information
@@ -27,6 +28,6 @@ engine = sqlalchemy.create_engine(url="mysql+pymysql://{0}:{1}@{2}:{3}/{4}".form
             user, password, host, port, database
         ))
 df.to_sql(name='CensusData', con=engine, index=False, if_exists='append')
-print(df)
+
 
 
